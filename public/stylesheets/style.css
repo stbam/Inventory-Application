@@ -1,0 +1,66 @@
+html{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+#search{
+    height: 500px;
+   display: grid;
+}
+.name_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search::before {
+    content: '\2190'
+
+  }
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search::after{
+    content: '\2192'
+}
+#pokemonName{
+    font-size: 15px;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border-style: none;
+    outline: none;
+    border: 2px solid black;
+}
+#search-pokemon{
+ 
+    border-radius: 15px;
+    outline: none;
+    border-style: none;
+    transition: background-color .6s ease-in-out;
+    
+}
+#search-pokemon:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    
+}
+#pokemonSprite{
+   
+} 
+form{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+input{
+    
+    flex-basis: calc(33.33% - 10px); /*what this does? makes your elements flex by given amt */
+}

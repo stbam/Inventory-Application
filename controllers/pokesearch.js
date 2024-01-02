@@ -34,3 +34,18 @@ exports.pokemon_list = async(req,res,next)=>{
         next(e);
     }
 };
+
+exports.pokemon_delete = async (req, res, next) => {
+    try {
+        const delete_pokemon = await Pokemon.findOneAndDelete({ name: req.body.name });
+        if (!delete_pokemon) {
+            return res.status(404).send("Pokemon not found");
+        }
+       // res.send("Pokemon deleted successfully");
+       res.redirect('/search/list')
+        
+    } catch (err) {
+        next(err);
+    }
+};
+
