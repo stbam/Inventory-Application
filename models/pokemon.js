@@ -6,11 +6,12 @@ const PokemonSchema = new mongoose.Schema({
     height: Number,
     weight: String,
     forms: String,
+    imageUrl:String,
 });
 
-PokemonSchema.virtual("url").get(function () {
+/*PokemonSchema.virtual("url").get(function () {
     return "/list";
-  });
+  });*/
 
 // Create a model based on the schema
 const Pokemon = mongoose.model('Pokemon', PokemonSchema);

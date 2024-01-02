@@ -1,0 +1,30 @@
+<!-- pokedex.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <h1>Pokedex</h1>
+
+    <ul>
+        <% for (const pokemon of pokemonList) { %>
+            <li>
+               
+                
+                Name: <%= pokemon.name %><br>
+                Type: <%= pokemon.type %><br>
+                Height: <%= pokemon.height %><br>
+                Weight: <%= pokemon.weight %><br>
+                Forms: <%= pokemon.forms %><br>
+                Image: <img src="<%= pokemon.imageUrl %>" alt="<%= pokemon.name %> Image" width="100" height="100"><br>
+            </li>
+        <% } %>
+    </ul>
+
+</body>
+</html>

@@ -10,6 +10,11 @@ router.get('/', function(req, res, next) {
 router.post('/',pokesearch.create_pokemon_post);
 
 router.get('/list',pokesearch.pokemon_list);
-router.post('/list',pokesearch.pokemon_list);
+
+
 
 module.exports = router;
+
+
+
+

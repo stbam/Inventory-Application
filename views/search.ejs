@@ -36,6 +36,10 @@
     <label for="weight"></label>
     <input type="text" id="weight" name="weight" readonly>
 
+    <label for="imageUrl"></label>
+    <input type="text" name="imageUrl" id="imageUrl" >
+
+
     <button type="submit">Add Pokemon</button>
 </form>
 
@@ -81,6 +85,9 @@
 
             const weight  = document.getElementById('weight');
             weight.value = data.weight;
+
+            const imageUrl = document.getElementById('imageUrl');
+            imageUrl.value=data.sprites.front_default;
 
             imgElement.src = pokemonSprite;
             imgElement.style.display = "block";
