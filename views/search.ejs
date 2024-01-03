@@ -63,7 +63,7 @@ arrow.addEventListener('click', async () => {
     console.log(getRandomNumber(0,811));
 
     try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=811');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=800');
         const data = await response.json();
 
         fetchData(data.results[getRandomNumber(0,811)].name);
