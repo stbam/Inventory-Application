@@ -48,4 +48,18 @@ exports.pokemon_delete = async (req, res, next) => {
         next(err);
     }
 };
+exports.single_pokemon = async(req,res,next)=>{
+    try{
+        const get_pokemon = await Pokemon.aggregate([{$sample:{size:1}}]);
 
+        // res.render("pokedex",{ pokemonList: allPokemon}) //renders the list in pokedex.ejs
+
+        res.render('singlePokemon',{name:get_pokemon})
+        if (random_pokemon.length === 0) {
+            return res.status(404).send("No Pokemon found");
+        }
+    }
+    catch(err){
+        next(err);
+    }
+};

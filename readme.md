@@ -14,4 +14,4 @@ page
 Pages so far:
 1.search pokemon
 2.Pokedex (with scroll function?)
-3.
+3.a signle display for each pokemon in colletion where you can update it
