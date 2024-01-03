@@ -10,50 +10,85 @@
    
 </head>
 
-<body>
-                        
 
-                           <form action="individualPokemon" method="post">
-                            <h1>Single Pokemon</h1>
-                            <div>
-                                <label for="name"><p>Name: <%= name %></p></label>
-                                <input type="text" name="name" id="name" required>
-                            </div>
-                            <div>
-                                <label for="type"> <p>Type: <%= type %></p></label>
-                                
-                                <input type="text" name="type" id="type"required>
-                            </div>
-                           
 
-                            <div>
-                                <label for="height">  <p>Height: <%= height %></p></label>
-                                <input type="text" pattern="\d*" title="Only Numbers are allowed" name="height" id="height"required>
-                            </div>
 
+
+<body >
+    
+
+
+    <div class="pokedex">
+                            <div class="container">       
+                           <form class="form" action="individualPokemon" method="post">
+                           <div  class="inner-container">
                             <div>
-                                <label for="forms">   <p>Forms:<% forms %></p></label>
-                                <input type="text" name="forms" id="forms">
-                            </div>                            
-                            <div>
-                                <label for="imageUrl"><img src="<%= imageUrl %>" alt="Pokemon Image"></label>
+
+                                <div class="type">
+                                    <label for="type"> <p>Type: <%= type %></p></label>
+                                    
+                                    <input type="hidden" name="type" id="type"required>
+                                </div>
+                               
+                            <div class="pokeimage">
+                                <label for="imageUrl"><img id="image" src="<%= imageUrl %>" alt="Pokemon Image"></label>
                                 <input type="hidden" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
                             </div>
 
-                                <div>
-                                    <input type="hidden" name="_id" id="" value="<%= _id %>"required>        
-                                    <button id="update">Update</button>
-                                    <button><a id="return-btn" href="/search/list">Return To Your Collection</a></button>
-                                </div>
+                            <div class="name">
+                                <label for="name"><p>Name: <%= name %></p></label>
+                                <input type="hidden" name="name" id="name" required>
+                            </div>
+
+                        </div>
+                        <div class="options">
+                            <input type="hidden" name="_id" id="" value="<%= _id %>"required>        
+                            <button id="update">Update</button>
+                            <button><a id="return-btn" href="/search/list">Collection</a></button>
+                        </div>
+                    </div> 
+                        <div class="extra-info">
+
+    
+                            <div class="height">
+                                <label for="height">  <p>Height: <%= height %></p></label>
+                                <input type="hidden" pattern="\d*" title="Only Numbers are allowed" name="height" id="height"required>
+                            </div>
+                            
+
+                            <div class="forms">
+                                <label for="forms">   <p>Forms:<% forms %></p></label>
+                                <input type="hidden" name="forms" id="forms">
+                            </div>                            
+                            
+                        </div>
+                               
 
                             
                         </form>
-                                    
-                    
+                    </div>    
+                </div>      
 </body>
 <script>
 
 
+/*
+<div class="new">
+    <form action="individualPokemon" method="post">
+        <div  class="inner-container">
+            <label for="type"> <p>Type: <%= type %></p></label>
+                                    
+            <input type="text" name="type" id="type"required>
+            <label for="imageUrl"><img id="image" src="<%= imageUrl %>" alt="Pokemon Image"></label>
+            <input type="text" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
+            <label for="name"><p>Name: <%= name %></p></label>
+            <input type="text" name="name" id="name" required>
+            <button id="update">Update</button>
+            <button><a id="return-btn" href="/search/list">Collection</a></button>
+        </form>
+    
+</div>
 
+*/
 </script>
 </html>
