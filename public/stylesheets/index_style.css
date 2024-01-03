@@ -1,6 +1,10 @@
 html{
 height: 100vh;
 background-color: rgb(175, 104, 104);/* for now*/
+background-image: url("/public/images/pokemon-scarlet-violet-setting.jpg.webp");
+background-size: cover;
+background-repeat: no-repeat;
+overflow-y: hidden;
 }
 body{
     height: 100vh;
@@ -32,3 +36,27 @@ a{
 a:visited{
     color: inherit;
 }
+
+
+#poke-card-back{
+    top: 50%;
+    left: 65%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+#logo{
+    width: 50%;
+}
+#pokeball{
+
+}
+#poke-card-back2{
+    width: 22%;
+    top: 50%;
+    right: 60%;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+
+
