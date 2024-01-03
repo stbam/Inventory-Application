@@ -7,6 +7,7 @@ const PokemonSchema = new mongoose.Schema({
     weight: String,
     forms: String,
     imageUrl:String,
+    
 });
 
 /*PokemonSchema.virtual("url").get(function () {

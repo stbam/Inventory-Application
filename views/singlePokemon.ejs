@@ -6,13 +6,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Pokemon</title>
+    <link rel="stylesheet" href="/stylesheets/individPokemon.css">
+   
 </head>
 
 <body>
-    <h1>Single Pokemon</h1>
-    <p>Name: <%= name %></p>
-    <!-- Add other details or styling as needed -->
-</body>
+                        
 
+                           <form action="individualPokemon" method="post">
+                            <h1>Single Pokemon</h1>
+                            <div>
+                                <label for="name"><p>Name: <%= name %></p></label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div>
+                                <label for="type"> <p>Type: <%= type %></p></label>
+                                
+                                <input type="text" name="type" id="type"required>
+                            </div>
+                           
+
+                            <div>
+                                <label for="height">  <p>Height: <%= height %></p></label>
+                                <input type="text" pattern="\d*" title="Only Numbers are allowed" name="height" id="height"required>
+                            </div>
+
+                            <div>
+                                <label for="forms">   <p>Forms:<% forms %></p></label>
+                                <input type="text" name="forms" id="forms">
+                            </div>                            
+                            <div>
+                                <label for="imageUrl"><img src="<%= imageUrl %>" alt="Pokemon Image"></label>
+                                <input type="hidden" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
+                            </div>
+
+                                <div>
+                                    <input type="hidden" name="_id" id="" value="<%= _id %>"required>        
+                                    <button id="update">Update</button>
+                                    <button><a id="return-btn" href="/search/list">Return To Your Collection</a></button>
+                                </div>
+
+                            
+                        </form>
+                                    
+                    
+</body>
+<script>
+
+
+
+</script>
 </html>
- 

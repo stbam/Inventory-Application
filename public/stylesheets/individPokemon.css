@@ -1,0 +1,34 @@
+html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+   display: flex;
+   justify-content: center;
+   
+   flex-direction: column;
+    
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label{
+ 
+}
+input{
+ 
+}
+#return-btn{
+    text-decoration: none;
+
+}
+#return-btn:visited{
+    color: inherit;
+}
