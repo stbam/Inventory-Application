@@ -71,6 +71,8 @@ input{
 }
 a{
     text-decoration: none;
+    background-color: aliceblue;
+    margin-right: 20px;
 }
 a:visited{
     color: inherit;
