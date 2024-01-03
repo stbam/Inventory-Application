@@ -30,5 +30,6 @@ input{
 
 }
 #return-btn:visited{
+    text-decoration: none;
     color: inherit;
 }

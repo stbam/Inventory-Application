@@ -16,6 +16,7 @@ var searchRouter =  require('./routes/search');
 var app = express();
 
 mongoose.connect("mongodb+srv://stbacmtd:Stru5932@cluster0.qoxy26k.mongodb.net/?retryWrites=true&w=majority");
+app.use('/public', express.static('public'));/* allows image to be displayed*/
 
 //app.use(express.static(path.join(__dirname, 'search')));
  //?
