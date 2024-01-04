@@ -9,6 +9,7 @@
   <title>Error</title>
   
 </head>
+
 <img id="poke-card-back2" src="/public/images/pokelogo2.svg" alt="">
 <body>
   <img id="logo" src="/public/images/pokelogo.png" alt="">
@@ -26,10 +27,11 @@
  
 
     <div class="login" id="loginDetails" style="display:none;">
-   
+     
       
       <% if (user) {%>
-        
+
+       
           <h1>WELCOME BACK <%= user.username %></h1>
           <a href="/log-out">LOG OUT</a>
         <% } else { %>
@@ -45,9 +47,14 @@
   </div>
   
 <div>
-    
+
 </div>
+<div>
+  
+</div>
+
 </body>
+
 <script>
 
   function showLoginDetails(){

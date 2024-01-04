@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+    <h1><% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
         <div id="search" >
             <div class="name_img">
                 <img src="https://miro.medium.com/v2/resize:fit:1400/1*kZW4nlRSLAMq0EA2EoKStg.png" alt="Pokemon Sprite" id="pokemonSprite" style="display:display; width: 11%; height:100px;">
@@ -24,6 +24,7 @@
             </div>
             
           
+            
            
         
            
@@ -57,9 +58,13 @@
                              
                             </form>
                      </div>
+                     
 
 
 </body>
+
+
+
 <script>
 const arrow = document.getElementById('random');
 

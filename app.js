@@ -32,6 +32,10 @@ const User = mongoose.model(
   })
 );
 
+
+/////////
+
+
 //app.use(express.static(path.join(__dirname, 'search')));
 //?
 
@@ -64,8 +68,10 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(async (id, done) => {
   try {
     const user = await User.findById(id);
+    console.log("Deserialized User:", user);
     done(null, user);
   } catch(err) {
+    console.error("Error deserializing user:", err);
     done(err);
   };
 });

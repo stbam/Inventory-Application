@@ -3,8 +3,9 @@ var router = express.Router();
 const pokesearch = require("../controllers/pokesearch");
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  console.log("create");
-  res.render("search");
+  console.log(req.user +" user");
+  res.render("search",{ user: req.user }); //passes req.user to search?
+  
 });
 
 router.post("/delete", pokesearch.pokemon_delete);
@@ -14,10 +15,10 @@ router.get("/list", pokesearch.pokemon_list);
   res.send("testatdsa");
 }); */
 
-router.get("/", function (req, res, next) {
+/*router.get("/", function (req, res, next) {
   console.log("create");
   res.render("search", { user: req.user });
-});
+});*/ 
 
 router.post("/individualPokemon", pokesearch.update_pokemon);
 router.get("/individualPokemon", pokesearch.single_pokemon);
