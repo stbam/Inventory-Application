@@ -19,7 +19,6 @@ router.get("/", function (req, res, next) {
   res.render("search", { user: req.user });
 });
 
-
 router.post("/individualPokemon", pokesearch.update_pokemon);
 router.get("/individualPokemon", pokesearch.single_pokemon);
 

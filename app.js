@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const mongoose = require("mongoose");
 
 var createError = require("http-errors");
@@ -31,6 +31,7 @@ const User = mongoose.model(
     password: { type: String, required: true }
   })
 );
+
 //app.use(express.static(path.join(__dirname, 'search')));
 //?
 
@@ -89,6 +90,11 @@ app.use("/search", searchRouter);
 app.get("/", (req, res) => {
   res.render("index", { user: req.user });
 });
+
+
+app.get('/search',(req,res)=>{
+  res.render("search",{ user: req.user });
+})
 
 
 app.get("/sign-up", (req, res) => res.render("sign-up-form"));
