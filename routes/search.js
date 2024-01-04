@@ -13,6 +13,13 @@ router.get("/list", pokesearch.pokemon_list);
 /*router.get("/individualPokemon", function (req, res,next) {
   res.send("testatdsa");
 }); */
+
+router.get("/", function (req, res, next) {
+  console.log("create");
+  res.render("search", { user: req.user });
+});
+
+
 router.post("/individualPokemon", pokesearch.update_pokemon);
 router.get("/individualPokemon", pokesearch.single_pokemon);
 
