@@ -15,7 +15,11 @@
 
 
 <body >
-    
+    <div>
+        <h1><% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
+        <a href="/log-out">LOG OUT</a>
+    </div>
+  
 
 
     <div class="pokedex">

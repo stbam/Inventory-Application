@@ -11,6 +11,7 @@ exports.create_pokemon_post = async (req, res, next) => {
       weight: weight,
       forms: forms,
       imageUrl: imageUrl,
+      
     });
 
     // console.log(pokemon._id); // Access the _id field
@@ -27,7 +28,7 @@ exports.pokemon_list = async (req, res, next) => {
 
     // res.json(allPokemon);
 
-    res.render("pokedex", { pokemonList: allPokemon }); //renders the list in pokedex.ejs
+    res.render("pokedex", { pokemonList: allPokemon,user:req.user, }); //renders the list in pokedex.ejs
   } catch (e) {
     next(e);
   }
@@ -61,6 +62,7 @@ exports.single_pokemon = async (req, res, next) => {
       forms: get_pokemon[0].forms,
       imageUrl: get_pokemon[0].imageUrl,
       _id: get_pokemon[0]._id,
+      user: req.user,
     });
     /*
   name: name,

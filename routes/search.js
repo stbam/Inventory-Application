@@ -20,8 +20,11 @@ router.get("/list", pokesearch.pokemon_list);
   res.render("search", { user: req.user });
 });*/ 
 
-router.post("/individualPokemon", pokesearch.update_pokemon);
 router.get("/individualPokemon", pokesearch.single_pokemon);
+
+
+
+router.post("/individualPokemon", pokesearch.update_pokemon);
 
 router.post("/", pokesearch.create_pokemon_post);
 
