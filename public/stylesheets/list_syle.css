@@ -1,52 +1,45 @@
-html{
- height: 100vh;
-  
-
+html {
+  height: 100vh;
 }
-body{
-   text-align: center;
-   height: 100vh;
-   
+body {
+  text-align: center;
+  height: 100vh;
 }
-ul{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-li{
-    flex-basis: calc(25% - 10px); /* triggered here not in ul*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+li {
+  flex-basis: calc(25% - 10px); /* triggered here not in ul*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
-a{
-    
-    text-decoration: none;
-    background-color: aliceblue;
-    margin: 15px;
-   
+a {
+  text-decoration: none;
+  background-color: aliceblue;
+  margin: 15px;
 }
 a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  #delete{ 
-    border-radius:20px;
-    width: 100px;
-    background: red;
-    border: none;
-    color: inherit;
-    font: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    transition: background-color 0.1s ease;
-  }
-  #delete:hover{
-    background-color: lightblue;
-
-  }
-  
+  color: inherit;
+  text-decoration: none;
+}
+#delete {
+  border-radius: 20px;
+  width: 100px;
+  background: red;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  transition: background-color 0.1s ease;
+}
+#delete:hover {
+  background-color: lightblue;
+}

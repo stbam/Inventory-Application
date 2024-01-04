@@ -1,13 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const PokemonSchema = new mongoose.Schema({
-    name: String,
-    type: String,
-    height: Number,
-    weight: String,
-    forms: String,
-    imageUrl:String,
-    
+  name: String,
+  type: String,
+  height: Number,
+  weight: String,
+  forms: String,
+  imageUrl: String,
 });
 
 /*PokemonSchema.virtual("url").get(function () {
@@ -15,6 +14,6 @@ const PokemonSchema = new mongoose.Schema({
   });*/
 
 // Create a model based on the schema
-const Pokemon = mongoose.model('Pokemon', PokemonSchema);
+const Pokemon = mongoose.model("Pokemon", PokemonSchema);
 
 module.exports = Pokemon;

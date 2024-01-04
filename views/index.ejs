@@ -14,23 +14,45 @@
   <img id="logo" src="/public/images/pokelogo.png" alt="">
   <img  id="pokeball" src="/public/images/Poke_Ball.png" alt="">
 
-  <div class="login">
-    <h1>Enter As demo user for now</h1>
-    <div class="outer-shell">
-      <div>Login</div>
-      <div>Sign Up</div>
-      <div><a  href="/search"> Enter As Demo User</a></div>
-
+    <div class="login" id="loginSection">
+      <h1>Enter As demo user for now</h1>
+      <div class="outer-shell">
+        <div id="loginButton" onclick="showLoginDetails()">Login</div>
+        <div> <a href="/sign-up"> Sign Up</a></div>
+        <div><a  href="/search"> Enter As Demo User</a></div>
+      </div>
     </div>
-    
+
+      
+
+    <div class="login" id="loginDetails" style="display:none;">
+      <% if (user) {%>
+          <h1>WELCOME BACK <%= user.username %></h1>
+          <a href="/log-out">LOG OUT</a>
+        <% } else { %>
+          <h1>please log in</h1>
+          <form action="/log-in" method="POST">
+            <label for="username">Username</label>
+            <input name="username" placeholder="username" type="text" />
+            <label for="password">Password</label>
+            <input name="password" type="password" />
+            <button>Log In</button>
+          </form>
+        <%}%>
   </div>
-
-
   
 <div>
     
 </div>
 </body>
+<script>
+
+  function showLoginDetails(){
+    document.getElementById('loginSection').style.display='none';
+    document.getElementById('loginDetails').style.display='block';
+    
+  }
+</script>
 <img id="poke-card-back" src="/public/images/pokemon.svg" alt="">
 
 </html>

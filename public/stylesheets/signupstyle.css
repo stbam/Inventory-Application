@@ -1,0 +1,26 @@
+html{
+    height: 100vh;
+    background-color: rgb(175, 104, 104); /* for now*/
+    background-image: url("/public/images/pokemon-scarlet-violet-setting.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.sign-up{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(161, 159, 16);
+}

@@ -1,119 +1,93 @@
-html{
-    height: 100vh;
-    background-image: url('/public/images/pokedex.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+html {
+  height: 100vh;
+  background-image: url("/public/images/pokedex.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body{
-    
-   /* display: flex;
+body {
+  /* display: flex;
     justify-content: center;
     align-items: center;*/
-   
 }
-.pokedex{
-    width:700px;
-    height: 500px;
-    display: grid;
-    
+.pokedex {
+  width: 700px;
+  height: 500px;
+  display: grid;
 }
-.container{
-    width:inherit;
-    display: grid;
+.container {
+  width: inherit;
+  display: grid;
 }
-.form{
-    
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   
-     
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   /* display: flex;
    justify-content: center;
    
    flex-direction: column;*/
-    
 }
-.inner-container{
-    margin-left: 130px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    
-
-
-    
+.inner-container {
+  margin-left: 130px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-.extra-info{
-    
-    width: 300px;
-    height: 20%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 70px;
-    border-radius: 10px;
+.extra-info {
+  width: 300px;
+  height: 20%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  border-radius: 10px;
 }
-div{
+div {
   /*  display: flex;
     align-items: center;
     justify-content: space-between;*/
 }
-label{
- 
+label {
 }
-input{
- 
+input {
 }
-#return-btn{
-    text-decoration: none;
-  
-  
-   font-size: 10px;
+#return-btn {
+  text-decoration: none;
+
+  font-size: 10px;
 }
-#return-btn:visited{
-    text-decoration: none;
-    color: inherit;
+#return-btn:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
-
-
-.pokeimage{
-   display: flex;
-   justify-content: center;
-  
+.pokeimage {
+  display: flex;
+  justify-content: center;
 }
-p{
-    margin: 0px;
+p {
+  margin: 0px;
 }
 
-.name{
-
+.name {
 }
-.type{
-
+.type {
 }
-.height{
-
+.height {
 }
-.forms{
-
+.forms {
 }
-#image{
-
-  
+#image {
 }
-#update{
-  
+#update {
 }
 
-.options{
-
+.options {
 }
-label{
-  
+label {
 }

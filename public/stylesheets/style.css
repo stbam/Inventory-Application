@@ -1,79 +1,69 @@
-html{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
+html {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-#search{
-    height: 500px;
-   display: grid;
+#search {
+  height: 500px;
+  display: grid;
 }
-.name_img{
+.name_img {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.randopoke{
-
-   
-    user-select: none;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-
+.randopoke {
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
-.randopoke:hover{
-    transform: scale(1.2);
+.randopoke:hover {
+  transform: scale(1.2);
 }
-.search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#pokemonName{
-    font-size: 15px;
-    display: flex;
-    width: 200px;
-    height: 30px;
-    border-radius: 15px;
-    border-style: none;
-    outline: none;
-    border: 2px solid black;
+#pokemonName {
+  font-size: 15px;
+  display: flex;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: none;
+  outline: none;
+  border: 2px solid black;
 }
-#search-pokemon{
- 
-    border-radius: 15px;
-    outline: none;
-    border-style: none;
-    transition: background-color .6s ease-in-out;
-    
+#search-pokemon {
+  border-radius: 15px;
+  outline: none;
+  border-style: none;
+  transition: background-color 0.6s ease-in-out;
 }
-#search-pokemon:hover{
-    background-color: lightblue;
-    cursor: pointer;
-    
+#search-pokemon:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
-#pokemonSprite{
-   
-} 
-form{
-    display: flex;
-    flex-wrap: wrap;
-    
-
+#pokemonSprite {
 }
-input{
-    
-    flex-basis: calc(33.33% - 10px); /*what this does? makes your elements flex by given amt */
+form {
+  display: flex;
+  flex-wrap: wrap;
 }
-a{
-    text-decoration: none;
-    background-color: aliceblue;
-    margin-right: 20px;
+input {
+  flex-basis: calc(
+    33.33% - 10px
+  ); /*what this does? makes your elements flex by given amt */
 }
-a:visited{
-    color: inherit;
+a {
+  text-decoration: none;
+  background-color: aliceblue;
+  margin-right: 20px;
+}
+a:visited {
+  color: inherit;
 }
