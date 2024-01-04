@@ -35,17 +35,18 @@
                 Weight: <%= pokemon.weight %><br>
                 Forms: <%= pokemon.forms %><br>
                 
-                Image: <img src="<%= pokemon.imageUrl %>" alt="<%= pokemon.name %> Image" width="100" height="100"><br>
-                
+                Image: <img src="<%= pokemon.imageUrl %>" alt="<%= pokemon.name %>  Image" width="100" height="100"><br>
+                <img class="ground" src="/public/images/pad.png" alt="">
                 <form action="delete" method="post">
                     <input type="hidden" name="name" value="<%= pokemon.name %>">
                     <button id="delete" >Delete</button>
                 </form>
-           
+                
                
 
             </li>
         <% } %>
+      
     </ul>
     <a href="/search">back to search</a>
     <a href="/search/individualPokemon">to Pokedex</a>

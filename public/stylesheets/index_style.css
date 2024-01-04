@@ -66,3 +66,6 @@ a:visited {
   position: absolute;
   transform: rotate(-45deg);
 }
+.ground{
+    width: 100px;
+}
