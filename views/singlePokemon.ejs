@@ -16,7 +16,7 @@
 
 <body >
     <div class="navbar">
-        <h1>User bob<% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
+        <h1><% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
        <div class="outershell">
             <a href="/log-out">LOG OUT</a>
             <a href="/search/list">Your List</a>
@@ -27,6 +27,31 @@
 
   
 
+<div class="outerdex">
+
+    <div class="new">
+        <form action="individualPokemon" method="post">
+            <div  class="inner-container">
+                <label for="type"></label>
+                                        
+                <input type="text" name="type" id="type"required placeholder="type">
+                <label for="imageUrl"></label>
+                <input type="hidden" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
+            
+                <label for="name"><p></p></label>
+                <input type="text" name="name" id="name" required placeholder="name">
+
+                
+                <button type="submit" id="update">Update</button>
+
+
+            </form>
+
+
+        
+    </div>
+    
+    </div>
 
     <div class="pokedex">
                             <div class="container">       
@@ -54,9 +79,10 @@
                         <div class="options">
                             <input type="hidden" name="_id" id="" value="<%= _id %>"required>        
                             <button id="update">Update</button>
-                            <button><a id="return-btn" href="/search/list">Collection</a></button>
+                           
                         </div>
                     </div> 
+                    
                         <div class="extra-info">
 
     
@@ -77,8 +103,15 @@
                             
                         </form>
                     </div>    
-                </div>      
+                </div>     
+            </div>
+            
+
 </body>
+
+
+
+
 <script>
 
 

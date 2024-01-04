@@ -25,11 +25,13 @@ body{
    user-select: none;
   }
   a{
+    color: black;
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.3s ease-in-out; /* Specify the property to transition */
   }
   a:hover{
+    color: inherit;
     background-color: yellow;
   }
 

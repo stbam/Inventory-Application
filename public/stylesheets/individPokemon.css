@@ -1,8 +1,12 @@
 html {
   height: 100vh;
-  background-image: url("/public/images/pokedex.png");
+  background-image: url('/public/images/landscape.jpg');
+ /* background-image: url("/public/images/pokedex.png");*/
   background-repeat: no-repeat;
   background-position: center;
+
+background-size: cover;
+
  /* display: flex;
   align-items: center;
   justify-content: center;*/
@@ -43,12 +47,22 @@ body {
     align-items: center;
     gap: 10px;
   }
+  .outerdex{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
 .pokedex {
   width: 700px;
-  height: 500px;
+  height: 600px;
   display: grid;
 }
 .container {
+    background-image: url("/public/images/pokedex.png");
+    background-repeat: no-repeat;
   width: inherit;
   display: grid;
 }

@@ -15,7 +15,7 @@
 
 <body>
     <div class="navbar">
-        <h1>User bob<% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
+        <h1><% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
        <div class="outershell">
             <a href="/log-out">LOG OUT</a>
             <a href="/search/list">Your List</a>
