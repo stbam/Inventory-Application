@@ -76,13 +76,20 @@ body {
    
    flex-direction: column;*/
 }
+.inner-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .inner-container {
   margin-left: 130px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  
+  margin-bottom: 90px;
 }
 .extra-info {
+   padding: 10px;
   width: 300px;
   height: 20%;
   background-color: white;
@@ -91,6 +98,8 @@ body {
   align-items: center;
   margin-bottom: 70px;
   border-radius: 10px;
+  gap: 20px;
+
 }
 div {
   /*  display: flex;
@@ -131,7 +140,9 @@ p {
 }
 #update {
 }
-
+.weight{
+    
+}
 .options {
 }
 label {

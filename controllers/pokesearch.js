@@ -62,6 +62,7 @@ exports.single_pokemon = async (req, res, next) => {
       forms: get_pokemon[0].forms,
       imageUrl: get_pokemon[0].imageUrl,
       _id: get_pokemon[0]._id,
+      weight:get_pokemon[0].weight,
       user: req.user,
     });
     /*
@@ -102,8 +103,9 @@ exports.single_pokemon = async (req, res, next) => {
 }*/
 exports.update_pokemon = async (req, res, next) => {
   try {
+    console.log(req.body);
     const { name, type, height, forms, weight, imageUrl, _id } = req.body;
-    console.log(name);
+    console.log(name + type + "name");
     const updatePokemon = await Pokemon.updateOne(
       { _id },
       {

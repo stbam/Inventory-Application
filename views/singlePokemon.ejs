@@ -28,20 +28,43 @@
   
 
 <div class="outerdex">
-
     <div class="new">
         <form action="individualPokemon" method="post">
-            <div  class="inner-container">
-                <label for="type"></label>
-                                        
-                <input type="text" name="type" id="type"required placeholder="type">
-                <label for="imageUrl"></label>
-                <input type="hidden" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
-            
-                <label for="name"><p></p></label>
-                <input type="text" name="name" id="name" required placeholder="name">
+            <div  class="inner-container2">
+                <div>
 
                 
+                <label for="type">Type:</label>               
+                <input type="text" name="type" id="type"required placeholder="type">
+            </div>
+
+            <div>
+                <label for="imageUrl" ></label>
+                <input type="hidden" name="imageUrl" id="imageUrl" value="<%= imageUrl %>" >
+
+            </div>
+           
+            <div>
+                <label for="forms">Forms</label>
+                <input type="text" name="forms" id="forms" placeholder="forms">
+            </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="name">
+                </div>
+                
+                <div>
+                    <label for="height">Height:</label>
+                    <input type="text" name="height" id="height" placeholder="height" pattern="[0-9]+">
+                </div>
+               <div>
+                <label for="weight">Weight:</label>
+                <input type="text" name="weight" id="weight" placeholder="weight" pattern="[0-9]+">
+               </div>
+                
+                <input type="hidden" name="_id" value="<%= _id %>">
+
+            
                 <button type="submit" id="update">Update</button>
 
 
@@ -78,7 +101,7 @@
                         </div>
                         <div class="options">
                             <input type="hidden" name="_id" id="" value="<%= _id %>"required>        
-                            <button id="update">Update</button>
+                            
                            
                         </div>
                     </div> 
@@ -93,10 +116,13 @@
                             
 
                             <div class="forms">
-                                <label for="forms">   <p>Forms:<% forms %></p></label>
+                                <label for="forms">   <p>Forms:<%=forms %></p></label>
                                 <input type="hidden" name="forms" id="forms">
                             </div>                            
-                            
+                            <div class="weight">
+                                <label for="weight">  <p>Weight: <%=weight%></p></label>
+                                <input type="hidden" name="weight" id="weight">
+                            </div>
                         </div>
                                
 
