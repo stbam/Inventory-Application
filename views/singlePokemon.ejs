@@ -15,10 +15,16 @@
 
 
 <body >
-    <div>
-        <h1><% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
-        <a href="/log-out">LOG OUT</a>
+    <div class="navbar">
+        <h1>User bob<% if (user) { %> Welcome Back, <%= user.username %> <% } %></h1>
+       <div class="outershell">
+            <a href="/log-out">LOG OUT</a>
+            <a href="/search/list">Your List</a>
+            <a href="/search">Search Pokemon</a>
+       </div>
+      
     </div>
+
   
 
 

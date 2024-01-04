@@ -1,10 +1,39 @@
 html {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+
 }
 body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+
   text-align: center;
-  height: 100vh;
 }
+.navbar{
+
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+h1{
+  margin-left: 10px;
+  user-select: none;
+ }
+ a{
+   border-radius: 5px;
+   padding: 10px;
+   transition: background-color 0.3s ease-in-out; /* Specify the property to transition */
+ }
+ a:hover{
+   background-color: yellow;
+ }
+ 
+.outershell{
+  display: flex;
+  align-items: center;
+}
+
 ul {
   display: flex;
   justify-content: center;

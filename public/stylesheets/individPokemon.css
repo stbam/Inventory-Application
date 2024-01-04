@@ -3,15 +3,46 @@ html {
   background-image: url("/public/images/pokedex.png");
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
+ /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
   /* display: flex;
     justify-content: center;
     align-items: center;*/
 }
+  .navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+  
+  }
+  h1{
+    margin-left: 10px;
+    user-select: none;
+   }
+   a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+     border-radius: 5px;
+     padding: 10px;
+     transition: background-color 0.3s ease-in-out; /* Specify the property to transition */
+   }
+   a:hover{
+    color: inherit;
+     background-color: yellow;
+   }
+   .outershell{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 .pokedex {
   width: 700px;
   height: 500px;

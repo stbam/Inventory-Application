@@ -13,6 +13,18 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.outershell{
+    display: flex;
+    align-items: center;
+}
+
 img {
   width: 15%;
 }
