@@ -65,7 +65,9 @@ exports.single_pokemon = async (req, res, next) => {
       weight:get_pokemon[0].weight,
       user: req.user,
     });
+    
     /*
+
   name: name,
             type: type,
             height: height,
